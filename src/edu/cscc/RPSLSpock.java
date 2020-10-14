@@ -35,7 +35,10 @@ public class RPSLSpock {
                 SPOCK.equalsIgnoreCase(pick));
     }
 
-    // TODO remove this comment and document this method
+    /**
+     * Generates a random string from the pool of valid RPSLS picks
+     * @return a random string from the pool of [ROCK, PAPER, SCISSORS, LIZARD, SPOCK]
+     */
     public static String generatePick() {
         String pick = null;
         switch (rand.nextInt(5)) {
