@@ -61,7 +61,12 @@ public class RPSLSpock {
         return pick;
     }
 
-    // TODO remove this comment and document this method
+    /**
+     * Determines if user c or h won the game of RPSLS
+     * @param c_pick The pick from the user 'c' (typically a computer)
+     * @param h_pick The pick from the user 'h' (typically from an external source)
+     * @return true and false if user c or user h won respectively
+     */
     public static boolean isComputerWin(String c_pick,String h_pick) {
         h_pick = h_pick.toLowerCase();
         return ((ROCK.equals(c_pick) && (SCISSORS.equals(h_pick) || LIZARD.equals(h_pick))) ||
