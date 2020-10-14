@@ -18,7 +18,11 @@ public class RPSLSpock {
     public static final String LIZARD = "lizard";
     public static final String SPOCK = "spock";
 
-    // TODO remove this comment and document this method
+    /**
+     * Determines if a given string is a valid pick for the game RPSLS
+     * @param pick The string to be evaluated
+     * @return boolean if 'pick' was a valid string
+     */
     public static boolean isValidPick(String pick) {
         if (pick == null) {
             return false;
