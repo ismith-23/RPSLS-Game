@@ -21,7 +21,13 @@ public class RPSLSpockTest {
         Assert.assertTrue(RPSLSpock.isValidPick(RPSLSpock.LIZARD));
         Assert.assertTrue(RPSLSpock.isValidPick(RPSLSpock.SPOCK));
 
-        // TODO remove this comment and verify the method returns false if passed and invalid argument like "banana"
+        Assert.assertFalse(RPSLSpock.isValidPick(""));
+        Assert.assertFalse(RPSLSpock.isValidPick(null));
+        Assert.assertFalse(RPSLSpock.isValidPick("Rocks"));
+        Assert.assertFalse(RPSLSpock.isValidPick("Paper Plains"));
+        Assert.assertFalse(RPSLSpock.isValidPick("julius caesar"));
+        Assert.assertFalse(RPSLSpock.isValidPick("Gieco"));
+        Assert.assertFalse(RPSLSpock.isValidPick("Star Trek"));
     }
 
     /**
