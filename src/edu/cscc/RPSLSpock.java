@@ -1,7 +1,13 @@
 package edu.cscc;
 import java.util.Random;
 
-// TODO remove this comment and  document this class. Be sure to include an @author tag
+/**
+ * Rock Paper Scissors Lizard Spock Game
+ * @author Isaiah Smith
+ * @version 1.0.0
+ * data: 10/14/2020
+ */
+
 public class RPSLSpock {
 
     static Random rand = new Random(System.currentTimeMillis());
